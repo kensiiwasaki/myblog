@@ -1,9 +1,14 @@
+import { FC } from "react";
 import { client } from "../../libs/client";
 import Blog from "./components/Blog";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
-export default function Home({ blog }) {
+type Props = {
+  blog: string;
+};
+
+const Home: FC<Props> = ({ blog }) => {
   return (
     <div>
       <Header />
@@ -11,7 +16,9 @@ export default function Home({ blog }) {
       <Footer />
     </div>
   );
-}
+};
+
+export default Home;
 
 // データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async () => {
