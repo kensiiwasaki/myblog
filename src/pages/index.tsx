@@ -1,4 +1,5 @@
-import { FC } from "react";
+import { userInfo } from "os";
+import { FC, useCallback, useEffect, useState } from "react";
 import { client } from "../../libs/client";
 import Blog from "./components/Blog";
 import Footer from "./components/Footer";
@@ -9,10 +10,25 @@ type Props = {
 };
 
 const Home: FC<Props> = ({ blog }) => {
+  const [posts, setPosts] = useState<any>([]);
+
+  const getPosts = useCallback(async () => {
+    const res = await fetch("https://api.github.com/users/kensiiwasaki");
+    const user = await res.json();
+    setPosts(user);
+  }, []);
+
+  useEffect(() => {
+    getPosts();
+  }, [getPosts]);
+
+  console.log(posts.name);
+
   return (
     <div>
       <Header />
       <Blog blog={blog} />
+      <div>{posts.name}</div>
       <Footer />
     </div>
   );
