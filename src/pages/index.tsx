@@ -22,8 +22,6 @@ const Home: FC<Props> = ({ blog }) => {
     getPosts();
   }, [getPosts]);
 
-  console.log(posts.name);
-
   return (
     <div>
       <Header />
