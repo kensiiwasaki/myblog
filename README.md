@@ -1,3 +1,13 @@
-個人サイト
+## 個人ブログサイト
 
-jamstack 開発
+### 目的
+
+- 個人のアウトプットを目的として作成
+- microCMS のテスト
+
+## 技術スタック
+
+- Next.js
+- TypeScript
+- TailwindCSS
+- microCMS
