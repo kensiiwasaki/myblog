@@ -9,5 +9,4 @@
 
 - Next.js
 - TypeScript
-- TailwindCSS
 - microCMS
