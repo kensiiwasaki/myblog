@@ -9,7 +9,7 @@ const Header = () => {
           <p>豆まきブログ</p>
           <div className={styles.mini_container}>
             <p>ポートフォリオ(仮)</p>
-            <p>趣味ギャラリー</p>
+            <p>趣味ギャラリー(仮)</p>
           </div>
         </div>
       </div>
