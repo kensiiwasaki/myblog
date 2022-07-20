@@ -8,7 +8,7 @@ const Header = () => {
         <div className={styles.container}>
           <p>豆まきブログ</p>
           <div className={styles.mini_container}>
-            <p>ポートフォリオ</p>
+            <p>ポートフォリオ(仮)</p>
             <p>趣味ギャラリー</p>
           </div>
         </div>
