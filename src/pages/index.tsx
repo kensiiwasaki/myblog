@@ -23,12 +23,12 @@ const Home: FC<Props> = ({ blog }) => {
   }, [getPosts]);
 
   return (
-    <div>
+    <>
       <Header />
       <Blog blog={blog} />
       <div>{posts.name}</div>
       <Footer />
-    </div>
+    </>
   );
 };
 

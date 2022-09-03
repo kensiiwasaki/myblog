@@ -4,7 +4,7 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   return (
     <div className={styles.body}>
-      <span>created by kenshi-iwasaki</span>
+      <span>created by imokenpi</span>
     </div>
   );
 };
